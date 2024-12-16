@@ -1,8 +1,8 @@
 import style from './Buttons.module.css';
 
-function Buttons({id, title}) {
+function Buttons({id, title, onClick}) {
 return (
-    <button className='btn btn-primary me-3' key={id}>{title}</button>
+    <button onClick={() => onClick()} className='btn btn-primary me-3' key={id}>{title}</button>
 )
 }
 
